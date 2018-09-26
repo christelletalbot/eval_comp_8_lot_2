@@ -10,7 +10,9 @@ body {
 	max-width: 100%;
 	min-height: 100vh;
 }
-
+fieldset {
+	border: none;
+} 
 h2 {
 	text-align: center;
 }
@@ -26,7 +28,7 @@ h2 {
 	display: flex;
 }
 
-.contact-form, .name-form, .civility-form, .age-form, .contact, .address-form, .profession-form, .msg, .box, .{
+.contact-form, .name-form, .civility-form, .age-form, .contact, .address-form, .profession-form, .msg, .box {
 	margin: 10px;
 	background-color: #d8e1e4;
 	text-align: center;	
@@ -34,6 +36,9 @@ h2 {
 
 .card-address {
 	border: #b0906c 1px solid;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
 }
 .map {
 	text-align: left;
@@ -41,8 +46,7 @@ h2 {
 
 img {
 	display: block;
-    margin: -11px -11px 0;
-    width: calc(100% + 22px);
+    width: 100%;
     object-fit: cover;
 }
 
@@ -53,7 +57,7 @@ iframe {
 }
 
 @media(max-width: 600px) {
-	.card-address {
+	.card-address, img, h1 {
 		display: none;
 	}
 	.contact-form {

@@ -2,17 +2,16 @@
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Eval8_v2</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="js/app.js" defer></script>
 </head>
-<body>
+ <body>
 	<header>
 		<div class="head">
-			<img src="./img/photo.jpeg" alt="" width="50" height="200" alt="head"/>
+			<img src="img/photo.jpeg" alt="" height="200"/>
 			<h1 class="style-head">Contactez-moi</h1>	
 		</div>	
 	</header>	
@@ -27,7 +26,7 @@
 					<div class="add-address">12000 Rodez</div>
 					<div class="email">jane@smith.com</div>
 					<div class="phone">06 01 02 03 04</div>
-					<img src="css/img/photo.jpeg" alt="">
+					<img src="img/photo.jpeg" alt="">
 				</div>
 			<div class="contact-form">	
 					<h2>Ecrivez-moi</h2>
@@ -36,7 +35,15 @@
 						<label>Nom *<input type="text" name="first-name" placeholder="Doe"></label>
 					</div>
 					<div class="civility-form">
-						<label>Civilité<input type="checkbox" name="femme">Femme<input type="checkbox" name="homme">Homme</label>
+						<fieldset>
+							<label>
+								Civilité
+								<input type="checkbox" name="femme">Femme
+							</label>
+							<label>
+								<input type="checkbox" name="homme">Homme
+							</label>	
+						</fieldset>	
 					</div>
 					<div class="age-form">
 						<label>Age<input type="number" name="age" placeholder="58"></label>
@@ -82,9 +89,11 @@
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45146.893865828904!2d2.2916089519238003!3d44.99079375133018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f8078e57be102d%3A0xbcac5318a8c14199!2s15250+Ayrens!5e0!3m2!1sfr!2sfr!4v1537437545488" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>	
 		</div>	
-</body>
-<footer>
-	<div class="footer">
-	</div>	
-</footer>
+	<footer>
+		<div class="footer">
+		</div>	
+	</footer>
+
+ <script type="text/javascript" src="js/app.js"></script>
+ </body>
 </html>
